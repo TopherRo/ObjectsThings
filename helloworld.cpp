@@ -37,7 +37,7 @@ int main()
     srand(1618);
 
     for ( int counter = 1; counter <= 20; ++counter)
-        cout <<  rand() % 15 << " ";
+        cout <<  rand() % 30 << " ";
 
     cout << endl;
     cout << dBm_to_mW(3.0) << endl;
