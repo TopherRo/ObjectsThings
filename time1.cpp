@@ -9,10 +9,10 @@ using std::cout;
 
 Time::Time()    { hour = minute = second = 0; }
 
-void Time::setTime( int hour, int minute, int second )  {
-    hour = ( hour >= 0 && hour < 24 ) ? hour : 0;
-    minute = ( minute >= 0 && minute < 60 ) ? minute : 0;
-    second = ( second >= 0 && second < 24 ) ? second : 0;
+void Time::setTime( int h , int m , int s )  {
+    hour   = ( h >= 0 && h < 24 ) ? h : 0;
+    minute = ( m >= 0 && m < 60 ) ? m : 0;
+    second = ( s >= 0 && s < 60 ) ? s : 0;
 }
 
 void Time::printTime()  { cout << hour << ":" << minute << ":" << second ; }

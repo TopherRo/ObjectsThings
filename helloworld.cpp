@@ -45,7 +45,7 @@ int main()
     cout << mW_to_dBm(2.0) << endl;
 
     auto start1 = high_resolution_clock::now();
-    cout << case_fibonacci(33) << endl;
+    cout << case_fibonacci(35) << endl;
     auto stop1 = high_resolution_clock::now();
     auto duration1 = duration_cast<microseconds>(stop1 - start1);
     cout << duration1.count() << endl;
@@ -58,6 +58,10 @@ int main()
 
     Time t;
     t.printTime();
+    cout << endl;
+    t.setTime( 10 , 15 , 80 );
+    t.printTime();
+    cout << endl;
 }
 
 double dBm_to_mW( double x )  
