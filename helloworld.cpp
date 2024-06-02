@@ -1,3 +1,5 @@
+//g++ -g helloworld.cpp time1.cpp -o helloworld
+
 #include <iostream>
 
 using std::cout;
@@ -26,7 +28,7 @@ unsigned long if_fibonacci( unsigned long );
 
 int main()
 {
-    vector<string> msg {"Hello", "C++", "World", "from", "VS Code", "and the C++ extension!"};
+    vector<string> msg {"Hello", "C++", "World", "from", "VS Code", "and the C++ extension!!!"};
     for (const string& word : msg)
     {
         cout << word << " ";
@@ -59,7 +61,7 @@ int main()
     Time t;
     t.printTime();
     cout << endl;
-    t.setTime( 10 , 15 , 80 );
+    t.setTime( 10 , 15 , 15 );
     t.printTime();
     cout << endl;
 }
